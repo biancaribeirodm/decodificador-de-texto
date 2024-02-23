@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="cabecalho">
+        <img class="logo" src="./imagens/logoA3x.png" alt="logo">
+        <h1 class="alura">ONE - Alura / Turma 6 - 2024</h1>
+      </div>
+    <div class="container">
+      <div class="criptografar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="digite seu texto aqui..."
+        ></textarea>
+
+        <div class="regra">
+          <p><ion-icon name="alert-circle-outline"></ion-icon>Apenas letras minusculas e sem acento.</p>
+        </div>
+        <div class="botoes">
+          <button class="btn-criptografar" type="button" onclick="criptografar()"><ion-icon name="lock-closed-outline"></ion-icon>
+            Criptografar
+          </button>
+          <input 
+            type="button"
+            class="btn-descriptografar"
+            value="Descriptografar"
+            onclick="descriptografar()"
+          />
+        </div>
+      </div>
+      <div class="criptografado">
+        <img class="totoro" src="./imagens/tc2.jpg" alt="totoro" id="totoro" />
+        <div class="mensagem-criptografado" id="mensagem-criptografado">
+          <h2 id="titulo-mensagem">Digite um texto que deseja criptografar e descriptografar</h2>
+          <p id="paragrafo">
+            "Segredos que esperam ser desvendados!"
+          </p>
+          <input
+          type="button"
+          class="btn-copiar"
+          value="Copiar"
+          onclick="copiar()"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="rodape">
+        <div class="icons">
+        <a href="https://www.linkedin.com/in/bianca-ribeirodm/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.instagram.com/baahrdm"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://github.com/biancaribeirodm"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+        <h3>Desenvolvido por Bianca Ribeiro</h3>
+     </footer>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script src="app.js"></script>
+</html>
